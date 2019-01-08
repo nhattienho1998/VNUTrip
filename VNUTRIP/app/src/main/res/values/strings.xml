@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">VNU Trip</string>
+    <string name="university">VNU nổi tiếng với cái tên “Làng đại học”. Một khuôn viên với diện tích lớn bao gồm các trường đại học thành viên.</string>
+    <string name="food">“Có thực mới vực được đạo”,ngoài việc học thì việc ăn cũng đóng vai trò quan trọng. Ẩm thực nơi đây rất phong phú và đa dạng.</string>
+    <string name="drink">Những quán coffee, trà sữa là những nơi tuyệt vời để sinh viên có thể học tập và chém gió với bạn bè.</string>
+    <string name="photos">Phong cảnh nơi đây không khác gì chốn thiên đường. Đã đến đây rồi thì không thể rời đi nếu chưa có một tấm ảnh.</string>
+    <string name="hotels">Hàng loạt các nhà nghỉ đầy đủ tiện nghi, dịch vụ nhưng giá rất là sinh viên tạo cho bạn cảm giác tuyệt vời, thoải mái sau một ngày tham quan VNU</string>
+
+    <string name="uit">Trường Đại học Công nghệ Thông tin</string>
+    <string name="bku">Trường Đại học Bách Khoa</string>
+    <string name="us">Trường Đại học Khoa Học Tự Nhiên</string>
+    <string name="iu">Trường Đại học Quốc Tế</string>
+    <string name="uel">Trường Đại học Kinh Tế Luật</string>
+    <string name="ussh">Trường Đại học Khoa học Xã Hội và Nhân Văn</string>
+
+    <string name="canteeniu">Căn tin Đại học Quốc tế</string>
+    <string name="binhdinhquan">Bình Định Quán</string>
+    <string name="lauca">Lẩu cá 44</string>
+    <string name="lauchay">Lẩu chay Hoằng Đạt</string>
+    <string name="ngoquyen">Cơm tấm Ngô Quyền</string>
+    <string name="miquang">Mì Quảng</string>
+    <string name="pho">Phở Bắc Hải</string>
+    <string name="comque">Cơm quê</string>
+    <string name="nhahangnamnho">Nhà hàng Năm Nhỏ</string>
+    <string name="quannhau76">Quán nhậu 76</string>
+
+
+    <string name="feel">Feel Coffee &amp; Tea Express</string>
+    <string name="zero">The Zero Coffee</string>
+    <string name="bobapop">Trà sữa Bobapop</string>
+    <string name="sky">Trà sữa Sky</string>
+    <string name="bonbon">Trà sữa BonBon</string>
+    <string name="sonata">Sonata Coffe Acoustic</string>
+
+    <string name="hoda">Hồ Đá</string>
+    <string name="ktxB">Ký túc xá khu B</string>
+    <string name="congbeniu">Cổng bên Đại học Quốc tế</string>
+    <string name="meomeo"> Khuôn viên trường Đại học Khoa học Tự Nhiên</string>
+    <string name="ngaba">Ngã ba Hồ Đá</string>
+    <string name="conduong">Con đường tình yêu</string>
+
+    <string name="bkudes">Đại học Bích Khuê (BKU) được gắn với cái tên đầy thú vị “Lầu Xanh”. Sở dĩ có tên là “Lầu Xanh” là bởi vì màu đặc trưng của Bách Khoa là màu xanh, màu chủ đạo của logo, các tòa nhà. Là một trường đại học kỹ thuật đầu ngành tại miền Nam Việt Nam. Số lượng sinh viên vào trường hằng năm cũng là một con số lớn, vì vậy điều kiện để một sinh viên có thể vào được “Lầu Xanh” là khá cao. Muốn vào đã khó khăn, muốn ra lại còn khó khăn hơn. Còn một điều thú vị về “Lầu Xanh” nữa đó là:  “Lầu Xanh” nhưng đa số sinh viên đều là nam. </string>
+    <string name="usshdes">Đại học Khoa Học Xã Hội và Nhân Văn (USSH), có một điều mà ai cũng cảm nhận được đó là không khí “âm dương suy thịnh”. Số lượng phe “kẹp nơ” theo học ngôi trường này chiếm tỉ lệ áp đảo phe “đầu đinh” tới 80%.Do đó nơi đây còn có tên gọi khác là “Nữ Nhi Quốc”. Đặc trưng của trường là đào tạo về ngôn ngữ và các môn xã hội, văn hóa nên số lượng nam theo học ở đây rất ít và lẽ dĩ nhiên khi phái mạnh theo đuổi những ngành học này thì cũng phải “nhập gia tùy tục”, mạnh mẽ cứng rắn phải hóa dịu dàng, triết lý thơ văn để có thể hòa nhập với đại đa phần nữ sinh nơi đây. </string>
+    <string name="usdes">Đại học Khoa Học Tự Nhiên (HCMUS), trường có một nhà điều hành cao lớn với nước sơn màu xám đen, và đó là sự ra đời của tên gọi “Hắc Điếm”. Trường có lối kiến trúc độc đáo. Chắc chắn bạn không thể tin được khi mình đang đi ở tầng trệt rồi thành xuống tầng hầm lúc nào không hay. Với sự phân bố “độc nhất vô nhị”, nhà vệ sinh chính là điểm nhấn lớn nhất của trường đồng thời cũng là “ác mộng” đối với sinh viên. Thay vì nằm cuối dãy hoặc đầu dãy thì tại đây nhà vệ sinh được đặt ở giữa dãy nhà. </string>
+    <string name="uitdes">Đại học Công Nghệ Thông Tin (UIT), đứa con út của VNU. Vì thành lập muộn nhất nên khuôn viên trường khá nhỏ. Tuy nhỏ nhưng UIT sở hữu một tòa nhà cao nhất Đại học Quốc Gia (12 tầng), nhìn bên ngoài trông giống như được làm hoàn toàn bằng kính nên còn được gọi là “Thủy Tinh Cung”. Ở đây, có nhiều tòa nhà với hình dáng khác nhau, đặc biệt nơi dành cho sinh viên nghỉ trưa được gọi là “Ngã Tư Tử Thần”</string>
+    <string name="iudes">Tọa lạc tại khu “làng” Đại học ở Thủ Đức, trường Đại học Quốc Tế(IU) từng được mệnh danh là “Hồng Lâu Mộng” của Sài Gòn bởi màu sơn “nổi bần bật” của nó. Khi bước vào trong khuôn viên trường bạn sẽ thấy thích thú bởi hàng cây xanh trải khắp 2 toàn nhà cùng lối kiến trúc và cơ sở vật chất vô cùng hiện đại. Ở đây, thư viện được chia làm 2 khu Red Zone và Blue Zone.</string>
+    <string name="ueldes">Đại học Kinh Tế Luật (UEL), được cho là đứa con rơi của “Làng”. Là trường đại học đứng đầu về đào tạo và nghiên cứu khối ngành kinh tế và luật tại miền Nam Việt Nam. Bước vào khuôn viên trường, điều đầu tiên đập vào mắt bạn đó là dãy cây bóng mát – nơi bạn có thể thỏa sức check in. Những cây xanh mơn mởn được tỉa hàng ngày, những vỉa hè được dọn dẹp sạch sẽ giống như một cánh đồng cỏ xanh bất tận.</string>
+
+    <string name="cantiniudes">IU - Căn tin có tổng diện tích 1600m2 được bố trí tại tầng trệt với 7 quầy phục vụ ăn sáng, trưa và nước uống cho toàn bộ sinh viên, giảng viên cũng như cán bộ viên chức nhà trường trong thời gian nghỉ ngơi thư giãn. Bên cạnh đó trường còn xây dựng góc cà phê, sinh tố tầng 2 khối A1 và khu vực tầng 4 khối A2 bán các loại nước giải khát như trà sữa, cà phê và các loại bánh ngọt</string>
+    <string name="lauchaydes">Hầu như sinh viên ở làng đại học Thủ Đức ai cũng ít nhất một lần nghe đến quán lẩu chay "sau khu B". Quán lẩu chay tuy nhỏ nhưng thu hút khá đông các bạn sinh viên, nếu đi buổi trưa các ngày cuối tuần thì khả năng hết chỗ ngồi rất cao. Món lẩu ở đây không chỉ ngon bởi nước dùng thanh ngọt, 100% từ rau củ mà còn bởi các loại nấm và rau xanh ăn kèm bao tươi ngon. Đặc biệt hơn hết là món chao thần thánh, chủ quán pha chế cực ngon.</string>
+    <string name="laucades">Lẩu cá 44 nằm ngay gần ngã 3 chợ Nhân Văn, một khu chợ tự phát nằm bên hông trường ĐH KHXH và NV. Không gian quán rất rộng, đếm sơ qua cũng phải đến 20 bộ bàn ghế được sắp xếp thành 5 hàng dọc khá gọn gàng.Một điều thú vị là quán không có menu vì ở đây chỉ bán 2 loại: lẩu cá diêu hồng và lẩu cá basa. Khách cứ việc ngồi vào bàn sẽ có nhân viên nhanh chóng đến giới thiệu các mức giá bao gồm 100.000 đồng, 120.000 đồng và 140.000 đồng lần lượt tùy theo kích cỡ… nồi lẩu.</string>
+    <string name="ngoquyendes">Cơm tấm Ngô Quyền, quán cơm có nhiều chi nhánh nhất “làng” Đại học. Tại đây có nhiều món ăn phong phú như: sườn, trứng ốp-la, ba rọi nướng, gà,…. Chỉ với 20.000 đồng bạn đã có một bữa cơm no, ngon. </string>
+    <string name="phodes">Ngoài các quán cơm, thì các món nước cũng là một lựa chọn mà các sinh viên tìm đến mỗi khi đói. Phở Bắc Hải là điểm đến số một. Tại đây có nhiều món và giá cũng được in sẵn trên một cái menu to nên sinh viên tha hồ mà lựa chọn. Tất cả các món ở đây đề ngon, điển hình là Phở Tái  nóng hổi và thơm, thịt bò mềm, không dai còn nước dùng thì nấu theo kiểu Bắc, ít ngọt, thanh và không hôi mùi bò.</string>
+    <string name="binhdinhquandes">Chỉ mới 3 năm gắn bó với làng ĐHQG TP.HCM, nhưng "Bình Định quán" (đối diện khuôn viên trường ĐH Khoa học Tự nhiên) đã trở thành một địa chỉ ẩm thực quen thuộc của sinh viên. Dù người bán hay quên và làm món ăn chậm khiến thực khách luôn phải chờ đợi mỏi mòn, nhưng ai nấy cũng khó cưỡng lại sức hấp dẫn từ những món đặc sản trứ danh của Bình Định nơi đây.</string>
+    <string name="comquedes">Cơm quê làng đại học được cho là điểm thu hút nhiều bạn sinh viên thích hương vị quê nhà. Điểm nhấn gây ấn tượng nhất ở đây là không gian quán được trang trí với nhiều vật dụng cũ kỹ như chiếc máy quạt lúa, bộ bàn ghế gỗ, ấm trà, những chiếc thúng, chiếc quạt mo cau quạt mát mỗi trưa hè… Tất cả đều được chủ quán cất công sưu tầm, tìm mua ở quê mang về bày trí, tạo nên khung cảnh sinh động, đậm chất hoài cổ.</string>
+    <string name="namnhodes">Quán buffet đối diện nhà điều hành là địa điểm lý tưởng cho những cuộc vui. Bạn có thể thoải mái lấy nhiều hay ít đồ ăn tùy theo khả năng của bạn. Quán sẽ cung cấp cho bạn dụng cụ để nướng. Nhiệm vụ của bạn là đến quầy thức ăn để lấy thức ăn để đem về bàn và nướng số thức ăn đó. Ở đây cũng có một số thực ăn chế biến sẵn dành cho những người muốn ăn liền. Ngoài ra còn có trái cây và chè để tráng miệng. Ăn nhiều hay ít thì mức chi phí phải trả cho mỗi người là 99.000 đồng.</string>
+    <string name="quannhau76des">1,2,3 zô!!!!! Cái âm thanh quen thuộc được phát ra từ “Quán Nhậu 76” nằm phía sau kí túc xá khu A. Đây là địa điểm thích hợp cho các nhóm sinh viên tụ tập giải sầu sau những giờ học tập và làm việc căng thẳng. Ở đây có tất cả các món nhậu thông dụng như các quán nhậu khác nhưng giá cả rất là sinh viên. </string>
+    <string name="miquangdes">Mì Quảng nằm đối diện trường Đại học Khoa Học tự nhiên là điểm đến số 2 sau Phở Bắc Hải. Chỉ với 20.000 đồng, bạn có thể lựa chọn nhiều món khác nhau. Quán mang đến chốn đô thành này một chút hương vị miền Trung mà chẳng nơi nào có được. </string>
+    <string name="feeldes">Nếu là sinh viên của “Làng” thì nhất định phải ghé thăm Feel Coffee &amp; Tea Express một lần. Bởi vì ở đây có Không gian rộng rãi, thoáng mát thích hợp cho những bạn sinh viên đến trú nóng, học bài hoặc các nhóm đến chơi. Mặc dù giá cả của thức uống tầm trung nhưng độ ngon cũng không thua kém gì các thương hiệu coffee lớn. Điều đặc biệt ở đây là mới mỗi hóa đơn sẽ cấp bạn một mật khẩu wifi và có giá trị sử dụng trong 4 giờ đồng hồ kể từ lúc xuất hóa đơn.</string>
+    <string name="zerodes">Zero Coffee, quán nằm trong khuôn viên trường ĐH Quốc tế. Không gian quán rộng rãi, thoải mái vô cùng, có nhiều khoảng xanh thích mắt. Đồ uống tương đối ngon, bạn có thể ngồi ăn trưa ở đây vì sát bên là canteen của trường đại học Quốc Tế.. Nhân viên ở đây rất nhiệt tình, dễ chịu. Giữ xe có lấy số nên bạn yên tâm mà ngồi thưởng thức.</string>
+    <string name="bobapopdes">Bobapop, thương hiệu trà sữa quen thuộc đối với giới trẻ, tưởng chừng như không có ở “làng”. Nằm trên đường Tiêu Biểu 1, một không gian mang thương hiệu Bobapop mọc lên. Là nơi dành cho các “tín đồ” trà sữa.</string>
+    <string name="sonatades">Sonata Coffee Acoustic không giống như các quán coffee hay trà sữa khác,buổi tối ở đây thường tổ chức giao lưu ca nhạc dành cho các vị khách.</string>
+    <string name="bonbondes">Trà sữ BonBon cũng là một thương hiệu trà sữa khá phổ biến đối với sinh viên “làng” Đại học. Chỉ với 14.000đ bạn đã có một ly trà sữa “size Lớn”. Đặc biệt thức uống ở đây do chính bàn tay các nhân viên nam pha chế. “Trà Sữa BonBon -Trà Sữa Trai làm”</string>
+    <string name="skydes">Sky, quán trà sữa thu hút số lượng sinh viên đông đảo nhất “làng” bởi thức uống nơi đây vừa ngon mà vừa rẻ, có cả không gian ngoài trời và trong phòng. </string>
+    <string name="hodades">Nhắc đến làng đại học quốc gia thành phố Hồ Chí Minh, nhiều người lập tức nghĩ đến hồ Đá. Hồ Đá tiếng gần xa với phong cảnh đẹp, không khí mát mẻ. Sở hữu hồ nước rộng bao la với những vách đá đưa ra, mang một vẻ đẹp khoáng đãng, hồ Đá là nơi lý tưởng cho sinh viên tụ tập và hẹn hò.</string>
+    <string name="conduongdes">Đường Trục chính 4 hay còn gọi là “Con đường tình yêu” . Lối đi dẫn vào cổng trường Đại học Công Nghệ Thông Tin và Đại học Khoa Học Xã Hội và Nhân Văn. Sở dĩ nó có tên gọi như vậy là bởi vì con đường này đã se duyên cho rất nhiều cặp nam thanh nữ tú của 2 trường Đại học. Hai bên đường là những hàng cây xanh mát và dàn hoa muôn màu muôn sắc do sinh viên trồng.</string>
+    <string name="ktxkhuBdes">Kí túc xá khu B bao gồm những tòa nhà giống như một khu đô thị thu nhỏ, một trong những địa điểm mà các bạn sinh viên thích ghé thăm và tạo cho mình một kiểu ảnh để đăng lên mạng xã hội. </string>
+    <string name="meomeodes">Trường ĐH KHTN có một khuôn viên rộng cùng cảnh quan đẹp như trong một khu vườn với đủ loại cây xanh. Trong khuôn viên Trường trồng nhiều loại cây cảnh tạo nên khung cảnh xanh ngắt cho toàn trường. Trường càng trở nên đẹp hơn khi có con đường vòm có mái che dẫn đến các phòng học và vòi phun nước khá hiện đại nằm giữa khuôn viên. </string>
+    <string name="congbeniudes">Hành lang bên cạnh trường Đại học Quốc Tế là một địa điểm không thể nào bỏ qua. Được trang trí bởi 2 hàng cây xanh mát và dãy ghế đá dài bất tận. Đây là nơi tuyệt vời cho các cặp đôi ngồi tâm sự bên nhau</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>
