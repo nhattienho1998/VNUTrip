@@ -1,10 +1,9 @@
 package com.nth.nhattien.visitvnu;
 
-import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.location.Location;
-import android.support.v4.app.ActivityCompat;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -16,10 +15,14 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -27,19 +30,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private ViewPager viewPager;
     private Marker marker;
     private int pos;
+    private Integer[] imagesUniversity = {R.drawable.img_uit,R.drawable.img_bku,R.drawable.img_us,R.drawable.img_iu,R.drawable.uel1,R.drawable.img_ussh};
+    private Integer [] imagesFood = {R.drawable.img_canteen_iu,R.drawable.img_lauca,R.drawable.img_lauchay1,R.drawable.img_ngoquyen1,R.drawable.comque,R.drawable.img_quanpho1,R.drawable.miquang,R.drawable.img_binhdinhquan,R.drawable.img_namnho,R.drawable.quan76};
+    private Integer [] imagesDrinks = {R.drawable.img_feel1,R.drawable.img_zero2,R.drawable.img_bobapop,R.drawable.img_sky,R.drawable.img_bonbon1,R.drawable.sonata1};
+    private Integer [] imagesTakePhotos = {R.drawable.chupanh_trungtamquocphong1,R.drawable.img_ngaba,R.drawable.congbeniu,R.drawable.chupanh_duongtinhyeu,R.drawable.chupanh_kitucxab,R.drawable.chupanh_tunhien};
 
-
-    private Integer[] imagesUniversity = {R.drawable.img_uit, R.drawable.img_bku, R.drawable.img_us, R.drawable.img_iu, R.drawable.uel1, R.drawable.img_ussh};
-    private Integer[] imagesFood = {R.drawable.img_canteen_iu, R.drawable.img_lauca, R.drawable.img_lauchay1, R.drawable.img_ngoquyen1, R.drawable.comque, R.drawable.img_quanpho1, R.drawable.miquang, R.drawable.img_binhdinhquan, R.drawable.img_namnho, R.drawable.quan76};
-    private Integer[] imagesDrinks = {R.drawable.img_feel1, R.drawable.img_zero2, R.drawable.img_bobapop, R.drawable.img_sky, R.drawable.img_bonbon1, R.drawable.sonata1};
-    private Integer[] imagesTakePhotos = {R.drawable.chupanh_trungtamquocphong1, R.drawable.img_ngaba, R.drawable.congbeniu, R.drawable.chupanh_duongtinhyeu, R.drawable.chupanh_kitucxab, R.drawable.chupanh_tunhien};
-
-    private Integer[] stringUni = {R.string.uit, R.string.bku, R.string.us, R.string.iu, R.string.uel, R.string.ussh};
-    private Integer[] stringFood = {R.string.canteeniu, R.string.lauca, R.string.lauchay, R.string.ngoquyen, R.string.comque, R.string.pho, R.string.miquang, R.string.binhdinhquan, R.string.nhahangnamnho, R.string.quannhau76};
-    private Integer[] stringDrinks = {R.string.feel, R.string.zero, R.string.bobapop, R.string.sky, R.string.bonbon, R.string.sonata};
-    private Integer[] stringPhotos = {R.string.qs, R.string.ngaba, R.string.congbeniu, R.string.conduong, R.string.ktxB, R.string.meomeo};
-
-
+    private Integer [] stringUni = {R.string.uit,R.string.bku,R.string.us,R.string.iu,R.string.uel,R.string.ussh};
+    private Integer[] stringFood = {R.string.canteeniu,R.string.lauca,R.string.lauchay,R.string.ngoquyen,R.string.comque,R.string.pho,R.string.miquang,R.string.binhdinhquan,R.string.nhahangnamnho,R.string.quannhau76};
+    private Integer [] stringDrinks = {R.string.feel,R.string.zero,R.string.bobapop,R.string.sky,R.string.bonbon,R.string.sonata};
+    private Integer [] stringPhotos = {R.string.qs,R.string.ngaba,R.string.congbeniu,R.string.conduong,R.string.ktxB,R.string.meomeo};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,21 +49,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         Intent intent = getIntent();
+
         viewPager = (ViewPager) findViewById(R.id.ViewpagerDetail);
 
         final DetailViewPagerAdapter detailViewPagerAdapter;
         pos = Integer.parseInt(intent.getStringExtra("pos"));
-        if (pos == 0) {
+        if(pos == 0) {
             detailViewPagerAdapter = new DetailViewPagerAdapter(this, pos, imagesUniversity, stringUni);
             viewPager.setAdapter(detailViewPagerAdapter);
-        } else if (pos == 1) {
-            detailViewPagerAdapter = new DetailViewPagerAdapter(this, pos, imagesFood, stringFood);
+        }
+        else if(pos == 1){
+            detailViewPagerAdapter = new DetailViewPagerAdapter(this,pos,imagesFood,stringFood);
             viewPager.setAdapter(detailViewPagerAdapter);
-        } else if (pos == 2) {
-            detailViewPagerAdapter = new DetailViewPagerAdapter(this, pos, imagesDrinks, stringDrinks);
+        }
+        else if(pos == 2){
+            detailViewPagerAdapter = new DetailViewPagerAdapter(this,pos,imagesDrinks,stringDrinks);
             viewPager.setAdapter(detailViewPagerAdapter);
-        } else if (pos == 3) {
-            detailViewPagerAdapter = new DetailViewPagerAdapter(this, pos, imagesTakePhotos, stringPhotos);
+        }
+        else if(pos ==3){
+            detailViewPagerAdapter = new DetailViewPagerAdapter(this,pos,imagesTakePhotos,stringPhotos);
             viewPager.setAdapter(detailViewPagerAdapter);
         }
 
@@ -106,11 +109,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
+
         mMap = googleMap;
         ChonDiaDiem(pos, 0);
-
-
-
         // Add a marker in Sydney and move the camera
         //LatLng sydney = new LatLng(-34, 151);
         // marker = mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
@@ -125,6 +126,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 //markerUIT.icon(BitmapDescriptorFactory.fromResource(R.drawable.placeholder));
                 marker = mMap.addMarker(markerOptions);
 
+
                 CameraPosition cameraPosition = CameraPosition.builder()
                         .target(UIT)
                         .bearing(9.6f)
@@ -134,14 +136,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         .newCameraPosition(cameraPosition);
                 mMap.animateCamera(cameraUpdate, 1500, null);
 
-
-
             }
             if (i == 1) {
 
                 LatLng BKU = new LatLng(10.880595, 106.805430);
 
                 marker = mMap.addMarker(new MarkerOptions().position(BKU).title("BKU"));
+
                 CameraPosition cameraPosition = CameraPosition.builder()
                         .target(BKU)
                         .bearing(9.6f)
@@ -151,12 +152,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         .newCameraPosition(cameraPosition);
                 mMap.animateCamera(cameraUpdate, 1500, null);
 
-
             }
             if (i == 2) {
                 LatLng US = new LatLng(10.875574, 106.799097);
 
                 marker = mMap.addMarker(new MarkerOptions().position(US).title("US"));
+
                 CameraPosition cameraPosition = CameraPosition.builder()
                         .target(US)
                         .bearing(9.6f)
@@ -170,6 +171,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 LatLng IU = new LatLng(10.877625, 106.801587);
 
                 marker = mMap.addMarker(new MarkerOptions().position(IU).title("IU"));
+
                 CameraPosition cameraPosition = CameraPosition.builder()
                         .target(IU)
                         .bearing(9.6f)
@@ -184,6 +186,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 LatLng UEL = new LatLng(10.870765, 106.778227);
 
                 marker = mMap.addMarker(new MarkerOptions().position(UEL).title("UEL"));
+
                 CameraPosition cameraPosition = CameraPosition.builder()
                         .target(UEL)
                         .bearing(9.6f)
@@ -197,6 +200,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 LatLng USSH = new LatLng(10.872096, 106.8019797);
 
                 marker = mMap.addMarker(new MarkerOptions().position(USSH).title("USSH"));
+
                 CameraPosition cameraPosition = CameraPosition.builder()
                         .target(USSH)
                         .bearing(9.6f)
@@ -221,7 +225,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 CameraUpdate cameraUpdate = CameraUpdateFactory
                         .newCameraPosition(cameraPosition);
                 mMap.animateCamera(cameraUpdate, 1500, null);
-
             }
             if (i == 1) {
                 LatLng Lau44 = new LatLng(10.876924, 106.804762);
